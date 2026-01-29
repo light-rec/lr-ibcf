@@ -39,7 +39,6 @@ export class LightRec {
             const start = performance.now();
             this.modifyItemSimilarity(itemId);
             const end = performance.now();
-            console.log(`Modify Finished. [${(end - start).toFixed(2)}ms (${((end - start) / 1000).toFixed(3)}s)]`);
         }
     }
 
@@ -49,24 +48,18 @@ export class LightRec {
      */
     feed(data) {
         const startTime = performance.now();
-        console.log(`Starting feeding data.`);
 
         const actStart = performance.now();
         for (const i of data) {
             this.act(i.itemId, i.userId, i.points, false);
         }
         const actEnd = performance.now();
-        console.log(`Act Finished. [${(actEnd - actStart).toFixed(2)}ms (${((actEnd - actStart) / 1000).toFixed(3)}s)]`);
 
-        console.log('Building Similarity');
         const simStart = performance.now();
         this.buildItemSimilarity();
         const simEnd = performance.now();
-        console.log(`Similarity Finished. [${(simEnd - simStart).toFixed(2)}ms (${((simEnd - simStart) / 1000).toFixed(3)}s)]`);
 
         const endTime = performance.now();
-        console.log(`Feed completed in ${(endTime - startTime).toFixed(2)}ms (${((endTime - startTime) / 1000).toFixed(3)}s)`);
-        console.log(`Found ${Object.keys(this.itemMatrix).length} items`);
     }
 
     /**
@@ -166,7 +159,6 @@ export class LightRec {
                 val += `${k}:${vector[k]} `;
             }
             val += '}';
-            console.log(`${key}: ${val}`);
         }
     }
 }
