@@ -1,0 +1,33 @@
+{
+  "name": "@lightrec/lr-ibcf",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Lightweight Item-Based Collaborative Filtering Recommendation System",
+  "main": "main.js",
+  "files": [
+    "main.js",
+    "heap.js",
+    "utils.js"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Muktadirul675/lr-ibcf.git"
+  },
+  "keywords": [
+    "recommendation",
+    "collaborative-filtering",
+    "item-based",
+    "lightweight",
+    "recengine",
+    "machine-learning"
+  ],
+  "author": "Muktadirul Islam Mahi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Muktadirul675/lr-ibcf/issues"
+  },
+  "homepage": "https://github.com/Muktadirul675/lr-ibcf#readme"
+}
