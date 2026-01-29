@@ -1,7 +1,7 @@
 # LightRec
 
 **LightRec** is a lightweight, in-memory **item-based collaborative filtering recommendation engine** built in JavaScript.  
-It's designed as a hobby project to demonstrate recommendation algorithms with simplicity and speed.  
+It's designed as a hobby project to demonstrate recommendation algorithms with simplicity and speed.
 
 ---
 
@@ -12,7 +12,7 @@ It's designed as a hobby project to demonstrate recommendation algorithms with
 - Similarity calculation using cosine similarity
 - Fast top-N recommendations per user
 - Easy to feed data and extend
-
+- Works with smaller systems
 ---
 
 ## Installation & Usage
